@@ -7,9 +7,9 @@
 'use strict';
 
 const express = require('express');
-const { INSTRUMENTS } = require('./data');
+const { INSTRUMENTS } = require('../services/data');
 const { getSnapshot, getLastUpdated } = require('./scheduler');
-const trades = require('./trades');
+const trades = require('../services/trades');
 
 const router = express.Router();
 
