@@ -7,9 +7,9 @@
 'use strict';
 
 const cron = require('node-cron');
-const { getAllSymbolsMultiTF, getLatestPrices, INSTRUMENTS } = require('./data');
-const { analyzeSymbol } = require('./ict-engine');
-const trades = require('./trades');
+const { getAllSymbolsMultiTF, getLatestPrices, INSTRUMENTS } = require('../services/data');
+const { analyzeSymbol } = require('../core/ict-engine');
+const trades = require('../services/trades');
 
 // ── Global cache ──────────────────────────────────────────────────────────
 let cachedSnapshot = null;
