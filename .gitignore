@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+dist/
+
+# Env files (secrets)
+.env
+.env.local
+.env.*.local
+trading-api/.env
+
+# Logs
+*.log
+api.log
+api-error.log
+
+# Misc
+.DS_Store
+*.pem
+.vercel
